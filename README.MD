@@ -1,5 +1,3 @@
----
-
 ## Prerequisites
 
 - Python (version 3.13 or higher)
@@ -7,7 +5,10 @@
 - PureCloudPlatformClientV2
 
 Install dependency:
+
+```
 pip install PureCloudPlatformClientV2
+```
 
 ---
 
@@ -15,32 +16,46 @@ pip install PureCloudPlatformClientV2
 
 Add required environment variables:
 
-## macOS & Linux - Add the below to .zshrc/.bashrc
+### macOS & Linux - Add the below to .zshrc/.bashrc
+
+```
 export GENESYSCLOUD_OATUCLIENT_ID=ID_HERE
 export GENESYSCLOUD_OAUTHCLIENT_SECRET=SECRET_HERE
+```
 
-## Windows
+### Windows
+
 Refer to https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/set_1
 
--
+---
+
 ## Installation
 
-1 - Clone the repository:
-	git clone https://github.com/cc-sav-r/Genesys-Agent-Utilisation-Updater.git
+1. Clone the repository:
 
-2 - Change directory into project folder
+   ```
+   git clone https://github.com/cc-sav-r/Genesys-Agent-Utilisation-Updater.git
+   ```
 
-3 - (Optional: create a virtual environment)
-	python3 -m venv .venv
+2. Change directory into project folder
 
-	3a - Activate the virtual environment:
-		source .venv/bin/activate  # macOS/Linux
-		.venv\Scripts\activate     # Windows
+3. (Optional: create a virtual environment)
+
+   ```
+   python3 -m venv .venv
+   ```
+
+   3a. Activate the virtual environment:
+
+   ```
+   source .venv/bin/activate  # macOS/Linux
+   .venv\Scripts\activate     # Windows
+   ```
 
 ---
 
 ## Run the tool
 
+```
 python3 main.py
-
----
+```

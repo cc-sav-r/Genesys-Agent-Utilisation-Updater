@@ -57,7 +57,7 @@ Refer to https://learn.microsoft.com/en-us/windows-server/administration/windows
 ## Run the tool
 
 ```
-python3 main.py
+python3 app.py
 ```
 
 Ensure the agents.csv file is complete before running.

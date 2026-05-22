@@ -94,12 +94,12 @@ def start() :
 )
 
  try :
-    print('Looking for Genesys Cloud SDK...')    
+    print('Looking for Genesys Cloud Library...')    
     wait()
     if importlib.util.find_spec("PureCloudPlatformClientV2") is not None :
-        print('Genesys SDK is Intalled')
+        print('Genesys Cloud Library is Intalled')
     else :
-        print('''Genesys Cloud Python SDK not installed. Run 'pip install PureCloudPlatformClientV2' to install.''')
+        print('''Genesys Cloud Library not installed. Run 'pip install PureCloudPlatformClientV2' to install.''')
         exit()
     wait()
  except FileNotFoundError as e :

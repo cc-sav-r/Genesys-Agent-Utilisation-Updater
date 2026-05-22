@@ -57,7 +57,7 @@ def updateutilization(agent, msg_util, email_util) :
        print(e)
 
 ######################## Run Process ########################
-def runscript() :
+def run() :
   try:
     with open('agents.csv', 'r') as f:
         file = csv.DictReader(f)
@@ -79,7 +79,7 @@ def wait() :
      time.sleep(2)
      pass
 
-######################## Initial Start ########################
+########################  Start ########################
 def start() :
  print(
    r'''                           _     _    _ _   _ _ _           _   _             
@@ -119,7 +119,7 @@ def start() :
  wait()
  user_input = input('Enter yes to continue: ')
  if user_input == 'yes' :
-    runscript()
+    run()
  else:
     print('Process will now end. Update agents.csv and run app again')
     exit()

@@ -24,7 +24,36 @@ export GENESYSCLOUD_OAUTHCLIENT_SECRET=SECRET_HERE
 
 ### Windows
 
-Refer to https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/set_1
+**Option 1: Command Prompt (temporary, current session only)**
+
+```
+set GENESYSCLOUD_OAUTHCLIENT_ID=ID_HERE
+set GENESYSCLOUD_OAUTHCLIENT_SECRET=SECRET_HERE
+```
+
+**Option 2: PowerShell (temporary, current session only)**
+
+```
+$env:GENESYSCLOUD_OAUTHCLIENT_ID = "ID_HERE"
+$env:GENESYSCLOUD_OAUTHCLIENT_SECRET = "SECRET_HERE"
+```
+
+**Option 3: Permanent (persists across sessions/reboots)**
+
+Using PowerShell:
+
+```
+[System.Environment]::SetEnvironmentVariable("GENESYSCLOUD_OAUTHCLIENT_ID", "ID_HERE", "User")
+[System.Environment]::SetEnvironmentVariable("GENESYSCLOUD_OAUTHCLIENT_SECRET", "SECRET_HERE", "User")
+```
+
+Or via the GUI:
+
+1. Open **Start** and search for "Environment Variables"
+2. Select **Edit the system environment variables**
+3. Click **Environment Variables...**
+4. Under **User variables**, click **New...** and add each variable name/value pair
+5. Click **OK** to save, then restart any open Command Prompt/PowerShell/terminal windows for the changes to take effect
 
 ---
 

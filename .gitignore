@@ -1,2 +1,4 @@
-dockerfile
-stapp.py
+.venv/
+__pycache__/
+*.pyc
+

@@ -2,12 +2,11 @@
 
 - Python (version 3.13 or higher)
 - pip (Python package manager)
-- PureCloudPlatformClientV2
 
-Install dependency:
+Install dependencies:
 
 ```
-pip install PureCloudPlatformClientV2
+pip install -r requirements.txt
 ```
 
 ---
@@ -19,7 +18,7 @@ Add required environment variables:
 ### macOS & Linux - Add the below to .zshrc/.bashrc
 
 ```
-export GENESYSCLOUD_OATUCLIENT_ID=ID_HERE
+export GENESYSCLOUD_OAUTHCLIENT_ID=ID_HERE
 export GENESYSCLOUD_OAUTHCLIENT_SECRET=SECRET_HERE
 ```
 
@@ -56,8 +55,8 @@ Refer to https://learn.microsoft.com/en-us/windows-server/administration/windows
 
 ## Run the tool
 
+Ensure the agents.csv file is complete before running, then run:
+
 ```
 python3 app.py
 ```
-
-Ensure the agents.csv file is complete before running.
